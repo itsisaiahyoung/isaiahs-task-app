@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/isaiahs-task-app/static/css/main.3b238275.css",
+    "main.js": "/isaiahs-task-app/static/js/main.9901611b.js",
+    "static/js/453.8dd2f7cc.chunk.js": "/isaiahs-task-app/static/js/453.8dd2f7cc.chunk.js",
+    "index.html": "/isaiahs-task-app/index.html",
+    "main.3b238275.css.map": "/isaiahs-task-app/static/css/main.3b238275.css.map",
+    "main.9901611b.js.map": "/isaiahs-task-app/static/js/main.9901611b.js.map",
+    "453.8dd2f7cc.chunk.js.map": "/isaiahs-task-app/static/js/453.8dd2f7cc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b238275.css",
+    "static/js/main.9901611b.js"
+  ]
+}
