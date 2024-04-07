@@ -3,7 +3,7 @@
     align-items: center;
     flex-direction: column;
     margin: 0 20px;
-    background-color: #dbdbdb;
+    background-color: #3d434f;;
     border: 1px solid #282c34;
     border-radius: 25px;
     padding: 10px 20px;
@@ -23,5 +23,5 @@
 }
 
 .add-task-button:hover {
-    background-color: #a7a7a7;
+    border: 2px solid #16181c;
 }

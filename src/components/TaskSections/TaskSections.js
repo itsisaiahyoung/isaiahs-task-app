@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './TaskSections.css';
 import TaskSection from '../TaskSection/TaskSection';
+import { v4 as uuidv4 } from 'uuid';
+
 
 const TaskSections = () => {
   const [sections, setSections] = useState({});
@@ -13,11 +15,19 @@ const TaskSections = () => {
   };
 
   const addTaskToSection = (sectionName, task) => {
+    const taskWithId = { ...task, id: uuidv4() };
     setSections(prevSections => ({
       ...prevSections,
-      [sectionName]: [...prevSections[sectionName], task],
+      [sectionName]: [...prevSections[sectionName], taskWithId],
     }));
   };
+
+  const removeTaskFromSection = (sectionName, taskId) => {
+    setSections(prevSections => ({
+      ...prevSections,
+      [sectionName]: prevSections[sectionName].filter(task => task.id !== taskId),
+    }));
+  }
 
   return (
     <div className="task-sections">
@@ -27,6 +37,7 @@ const TaskSections = () => {
             section={sectionName} 
             tasks={tasks} 
             addTaskToSection={addTaskToSection}
+            removeTaskFromSection={removeTaskFromSection}
             />
       ))}
       <button className='add-section-button' onClick={() => addSection(prompt('Enter section name'))}>

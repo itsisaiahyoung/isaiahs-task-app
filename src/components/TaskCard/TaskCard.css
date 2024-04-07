@@ -1,0 +1,27 @@
+.task-card {
+    display: flex;
+
+    flex-direction: column;
+    background-color: #282c34;
+    color: white;
+    border: 1px solid #282c34;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    width: 80%;
+}
+
+.remove-task-button {
+    position: relative;
+    left: 150px;
+    top: 10px;
+    width: 30px;
+    background-color: #3e4451;
+    color: white;
+    border: none;
+}
+
+.remove-task-button:hover {
+    box-shadow: 0 0 5px 0 #3e4451;
+}
+
